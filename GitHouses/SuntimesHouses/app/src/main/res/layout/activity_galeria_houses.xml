@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Created Douglas Díaz on 8/2/23 23:08
+  ~               *  Copyright Ⓒ 2023. All rights reserved Ⓒ 2023
+  ~               *  Last modified: 8/2/23 23:08
+  ~               *
+  ~               *  Licensed under Douglas Solutions License, Version 2.0 (the "License"); you may not use this file
+  ~               *  except in compliance with the License. You may obtain a copy of the License at
+  ~               * Unless required by applicable law or agreed to in writing, software
+  ~               *   distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+  ~               *   either express or implied. See the License for the specific language governing permissions and
+  ~               *   limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaleriaHouses"
+    android:background="@color/calido">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        app:cardBackgroundColor="@color/azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/idEscojaFecha"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="FECHAS SELECCIONADAS"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTituloFechaEntrada"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/naranja"
+                android:text="FECHA ENTRADA"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="136dp" />
+
+            <TextView
+                android:id="@+id/idTituloFechaSalida"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="FECHA SALIDA"
+                android:textColor="@color/naranja"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="158dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/azul"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/idFechaEntrada"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/azul"
+                android:text=""
+                android:background="@drawable/custom_fecha"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="136dp" />
+
+            <View
+                android:id="@+id/iddivider"
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="570dp"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="549dp"
+                app:layout_constraintStart_toEndOf="@id/idolvidarPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnEntrar"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/idFechaSalida"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/azul"
+                android:background="@drawable/custom_fecha"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="158dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idrecyclercasas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardView3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

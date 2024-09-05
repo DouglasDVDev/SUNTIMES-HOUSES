@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Suntimes Houses</string>
+    <string name="botonMail">botonMail</string>
+    <string name="botonTel">botonTel</string>
+    <string name="imageContat">imageContat</string>
+    <string name="botonWhap">botonWhap</string>
+</resources>

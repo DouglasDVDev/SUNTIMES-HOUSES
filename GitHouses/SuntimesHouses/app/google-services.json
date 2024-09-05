@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755560271648",
+    "project_id": "suntimes-houses-2023",
+    "storage_bucket": "suntimes-houses-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755560271648:android:7ca87e44d222c2cf191145",
+        "android_client_info": {
+          "package_name": "com.example.suntimeshouses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755560271648-fbhrklh5vbrplc937qq8a2nj204vm9pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRLoRbS8U3nGRopanY9wb5mYNl2D0zBPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755560271648-fbhrklh5vbrplc937qq8a2nj204vm9pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

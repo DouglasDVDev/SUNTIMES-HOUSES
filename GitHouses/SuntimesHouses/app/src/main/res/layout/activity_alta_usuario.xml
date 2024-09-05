@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Created Douglas Díaz on 8/2/23 0:32
+  ~               *  Copyright Ⓒ 2023. All rights reserved Ⓒ 2023
+  ~               *  Last modified: 8/2/23 0:32
+  ~               *
+  ~               *  Licensed under Douglas Solutions License, Version 2.0 (the "License"); you may not use this file
+  ~               *  except in compliance with the License. You may obtain a copy of the License at
+  ~               * Unless required by applicable law or agreed to in writing, software
+  ~               *   distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+  ~               *   either express or implied. See the License for the specific language governing permissions and
+  ~               *   limitations under the License.
+  -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pantallabienvenida"
+    tools:context=".AltaUsuario">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:padding="20dp"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/idNuevoUsuario"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/editextpersonalizado"
+                android:padding="8dp"
+                android:hint ="Mail"
+                android:textColorHint="@color/purple_700"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/purple_700"
+                tools:ignore="HardcodedText"
+                android:autofillHints="yes" />
+
+            <EditText
+                android:id="@+id/idNuevaContra"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/editextpersonalizado"
+                android:padding="8dp"
+                android:hint ="Nueva Contraseña"
+                android:textColorHint="@color/purple_700"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/purple_700"
+                android:importantForAutofill="no"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/idRepeNuevaContra"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/editextpersonalizado"
+                android:padding="8dp"
+                android:hint ="Repetir Contraseña"
+                android:textColorHint="@color/purple_700"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/purple_700"
+                app:endIconMode="password_toggle"
+                android:importantForAutofill="no"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/idRegistrar"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="REGISTRAR"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius ="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/idEresUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="¿Eres usuario? ENTRA"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,SpUsage" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
